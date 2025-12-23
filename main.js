@@ -133,15 +133,15 @@
             (state.players[2] && state.players[2].name) || "プレイヤー3";
         const name4 =
             (state.players[3] && state.players[3].name) || "プレイヤー4";
-        const sum12 = s1 + s2;
-        const sum34 = s3 + s4;
+        const sum13 = s1 + s3;
+        const sum24 = s2 + s4;
         if (total12El) {
-            total12El.textContent = `${name1}+${name2}: ${sum12}`;
-            total12El.classList.toggle("over", sum12 >= THRESHOLD);
+            total12El.textContent = `${name1}+${name3}: ${sum13}`;
+            total12El.classList.toggle("over", sum13 >= THRESHOLD);
         }
         if (total34El) {
-            total34El.textContent = `${name3}+${name4}: ${sum34}`;
-            total34El.classList.toggle("over", sum34 >= THRESHOLD);
+            total34El.textContent = `${name2}+${name4}: ${sum24}`;
+            total34El.classList.toggle("over", sum24 >= THRESHOLD);
         }
     }
 
