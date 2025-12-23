@@ -44,6 +44,10 @@ h1 {
     gap: 8px;
     justify-content: space-between; /* カード内を上下に広げる */
 }
+.player:nth-child(2),
+.player:nth-child(3) {
+    background: #f3f3f3;
+}
 .player .name {
     font-weight: 600;
     border: 0;
@@ -130,6 +134,11 @@ button:disabled {
     min-width: 160px;
     text-align: center;
     position: relative;
+}
+#total34 {
+    background: #f3f3f3;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 .total::before {
     color: var(--muted);
