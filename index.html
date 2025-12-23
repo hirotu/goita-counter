@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ごいたカウンター</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>ごいたカウンター</h1>
+
+            <div id="players" class="players"></div>
+
+            <div class="totals">
+                <div class="total" id="total12">1+2: 0</div>
+                <div class="total" id="total34">3+4: 0</div>
+            </div>
+
+            <div class="toolbar">
+                <div style="display: flex; align-items: center; gap: 6px">
+                    <span style="font-size: 0.9rem; color: #374151"
+                        >目標点:</span
+                    >
+                    <input
+                        id="thresholdInput"
+                        type="number"
+                        min="0"
+                        step="10"
+                        class="threshold-input"
+                        value="150"
+                    />
+                </div>
+                <button id="reset" class="ghost">リセット（全員0点）</button>
+                <button id="undo" class="ghost">取り消す（Undo）</button>
+                <div style="flex: 1"></div>
+                <div class="meta">変更は自動保存されます。</div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
